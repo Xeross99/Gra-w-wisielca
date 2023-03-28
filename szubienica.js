@@ -1,10 +1,19 @@
-var wszystkie_hasla = ["bez pracy nie ma kołaczy", "chytry dwa razy traci", "elektryka prąd nie tyka", "apetyt rośnie w miarę jedzenia", "biednemu zawsze wiatr w oczy", "broda mędrcem nie czyni", "cel uświęca środki", "ciekawość to pierwszy stopień do piekła", "co dwie głowy, to nie jedna", "co kraj, to obyczaj"]
+var przyslowia = ["bez pracy nie ma kołaczy", "chytry dwa razy traci", "elektryka prąd nie tyka", "apetyt rośnie w miarę jedzenia", "biednemu zawsze wiatr w oczy", "broda mędrcem nie czyni", "cel uświęca środki", "ciekawość to pierwszy stopień do piekła", "co dwie głowy to nie jedna", "co kraj to obyczaj"]
+var kraje = ["Afganistan", "Australia", "Bangladesz", "Bośnia i Hercegowina", "Etiopia", "Honduras", "Kambodża", "Liberia", "Mauritius", "Nowa Zelandnia"]
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
-  }
+}
 
-var haslo = wszystkie_hasla[getRandomInt(wszystkie_hasla.length)]
+var losowanieKategorii = Math.floor(Math.random() * 2 + 1);
+
+if (losowanieKategorii == 1) {
+    var haslo = przyslowia[getRandomInt(przyslowia.length)];
+}
+else {
+    var haslo = kraje[getRandomInt(kraje.length)];
+}
+
 haslo = haslo.toUpperCase();
 
 var dlugosc = haslo.length;
@@ -28,6 +37,10 @@ for (i = 0; i < dlugosc; i++) {
 
 function wypisz_haslo() {
     document.getElementById("plansza").innerHTML = haslo1;
+    if (losowanieKategorii == 1)
+        document.getElementById("kategoria").innerHTML = "Kategoria: przysłowia";
+    else
+        document.getElementById("kategoria").innerHTML = "Kategoria: kraj";
 }
 
 window.onload = start;
