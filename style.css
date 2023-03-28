@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+* {
+    background-color: #000000;
+    color: lightgray;
+    font-size: 26px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+}
+
+#pojemnik {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#plansza {
+    width: 900px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 48px;
+    min-height: 60px;
+}
+
+#gra {
+    display: flex;
+    flex-direction: row;
+}
+
+#szubienica {
+    width: 450px;
+    text-align: center;
+    min-height: 280px;
+}
+
+#alfabet {
+    width: 450px;
+    text-align: center;
+    min-height: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.litera {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    margin: 7px;
+    border: 3px solid gray;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.litera:hover {
+    background-color: #222222;
+    color: white;
+    border: 3px solid white;
+}
+
+.reset
+{
+    color: green;
+    cursor: pointer;
+    font-size: 48px;
+}
+.reset:hover {
+    color: white;
+}
