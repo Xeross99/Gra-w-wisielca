@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
 * {
     background-color: #000000;
     color: lightgray;
@@ -59,12 +60,27 @@
     border: 3px solid white;
 }
 
-.reset
-{
+.reset {
     color: green;
     cursor: pointer;
     font-size: 48px;
 }
+
 .reset:hover {
     color: white;
+}
+
+@media(max-width:950px) {
+    #gra {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #alfabet {
+        margin-top: 20px;
+    }
+    #szubienica {
+        max-height: 280px;
+    }
+
 }
