@@ -7,6 +7,12 @@
     font-family: 'Inconsolata', monospace;
     font-weight: 700;
 }
+p{
+    text-align: center;
+    margin: 80px 0px 80px 0px;
+    padding: 10px;
+    font-size: 14px;
+}
 
 #pojemnik {
     width: 900px;
@@ -20,6 +26,11 @@
     text-align: center;
     font-size: 48px;
     min-height: 60px;
+}
+#kategoria
+{
+    text-align: center;
+    margin: 40px 0px 100px 0px;
 }
 
 #gra {
@@ -35,6 +46,7 @@
 
 #alfabet {
     width: 450px;
+    height: 300px;
     text-align: center;
     min-height: 280px;
     display: flex;
