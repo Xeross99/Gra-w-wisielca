@@ -7,7 +7,8 @@
     font-family: 'Inconsolata', monospace;
     font-weight: 700;
 }
-p{
+
+p {
     text-align: center;
     margin: 80px 0px 80px 0px;
     padding: 10px;
@@ -27,8 +28,8 @@ p{
     font-size: 48px;
     min-height: 60px;
 }
-#kategoria
-{
+
+#kategoria {
     text-align: center;
     margin: 40px 0px 100px 0px;
 }
@@ -88,11 +89,59 @@ p{
         flex-direction: column;
         align-items: center;
     }
+
     #alfabet {
         margin-top: 20px;
     }
+
     #szubienica {
         max-height: 280px;
     }
+
+    #plansza {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #pojemnik {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #kategoria {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media(max-width:460px) {
+    #alfabet {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 300px;
+    }
+
+    #litera {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    p {
+        margin-top: 160px;
+    }
+
+    #kategoria {
+        margin: 40px 0px 40px 0px;
+    }
+
+    #plansza {
+        margin: 20px 0px 0px 0px;
+    }
+
 
 }
