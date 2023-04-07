@@ -1,5 +1,5 @@
 var przyslowia = ["bez pracy nie ma kołaczy", "chytry dwa razy traci", "elektryka prąd nie tyka", "apetyt rośnie w miarę jedzenia", "biednemu zawsze wiatr w oczy", "broda mędrcem nie czyni", "cel uświęca środki", "ciekawość to pierwszy stopień do piekła", "co dwie głowy to nie jedna", "co kraj to obyczaj"]
-var kraje = ["Afganistan", "Australia", "Bangladesz", "Bośnia i Hercegowina", "Etiopia", "Honduras", "Kambodża", "Liberia", "Mauritius", "Nowa Zelandnia"]
+var kraje = ["Afganistan", "Australia", "Bangladesz", "Bośnia i Hercegowina", "Etiopia", "Honduras", "Kambodża", "Liberia", "Mauritius", "Nowa Zelandia"]
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
